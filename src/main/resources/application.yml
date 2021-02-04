@@ -1,0 +1,27 @@
+server:
+  port: 8000
+  undertow:
+    io-threads: 16
+    worker-threads: 4000
+    buffer-size: 1024
+    direct-buffers: true
+  compression:
+    enabled: true
+    min-response-size: 1
+
+spring:
+  redis:
+    host: localhost
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_exam_system?useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true&allowMultiQueries=true
+    username: root
+    password: 990524
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#日志相关配置
+#logging:
+#  config:
+#    classpath: logback-spring.xml
+#  level.com.dc.pcasweb.mapper: debug
+#  file: system_log
+#  level:
