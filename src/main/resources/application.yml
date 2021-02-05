@@ -18,6 +18,7 @@ spring:
     password: 990524
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+
 #日志相关配置
 #logging:
 #  config:

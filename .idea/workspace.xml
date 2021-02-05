@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e66138d-b4d3-4bb5-ac07-b705ee1e6de7" name="Default Changelist" comment="" />
+    <list default="true" id="8e66138d-b4d3-4bb5-ac07-b705ee1e6de7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/LOG_FILE_IS_UNDEFINED.20210205.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/system_log.20210205.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/security/SecurityConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/SystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/SystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/application/ApplicationContextProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/application/ApplicationContextProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/property/SystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/property/SystemConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/entity/ExamPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/entity/ExamPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/SystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/SystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/application/ApplicationContextProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/application/ApplicationContextProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +60,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -52,6 +71,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1nzwYrR2eMjHATRo4CjdzY4GKKl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="foldersAlwaysOnTop" value="false" />
@@ -62,6 +84,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -75,6 +98,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -150,12 +176,16 @@
       <option name="presentableId" value="Default" />
       <updated>1612406277936</updated>
       <workItem from="1612406280463" duration="14877000" />
-      <workItem from="1612430753023" duration="500000" />
+      <workItem from="1612430753023" duration="1131000" />
+      <workItem from="1612491057032" duration="4273000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Project_Structure" timestamp="1612420794720">
@@ -166,50 +196,78 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1612421395358" />
-    <state x="344" y="342" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612429214449">
+    <state x="344" y="342" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612495356900">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="344" y="342" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1612429214449" />
+    <state x="344" y="342" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1612495356900" />
+    <state x="338" y="9" key="CommitChangelistDialog2" timestamp="1612495484214">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="338" y="9" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1612495484214" />
+    <state x="113" y="65" key="DiffContextDialog" timestamp="1612495483593">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="113" y="65" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1612495483593" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1612408829534">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1612408829534" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1612431253046">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1612495370976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612431253046" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1612431253046">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612495370976" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1612495370975">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1612431253046" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1612431253046">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1612495370975" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1612495370975">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1612431253046" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1612431253046">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1612495370975" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1612495370975">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1612431253046" />
-    <state width="1493" height="213" key="GridCell.Tab.1.bottom" timestamp="1612431253047">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1612495370975" />
+    <state width="1493" height="208" key="GridCell.Tab.1.bottom" timestamp="1612495370976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612431253047" />
-    <state width="1493" height="213" key="GridCell.Tab.1.center" timestamp="1612431253047">
+    <state width="1493" height="208" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612495370976" />
+    <state width="1493" height="208" key="GridCell.Tab.1.center" timestamp="1612495370976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1612431253047" />
-    <state width="1493" height="213" key="GridCell.Tab.1.left" timestamp="1612431253047">
+    <state width="1493" height="208" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1612495370976" />
+    <state width="1493" height="208" key="GridCell.Tab.1.left" timestamp="1612495370976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1612431253047" />
-    <state width="1493" height="213" key="GridCell.Tab.1.right" timestamp="1612431253047">
+    <state width="1493" height="208" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1612495370976" />
+    <state width="1493" height="208" key="GridCell.Tab.1.right" timestamp="1612495370976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1612431253047" />
+    <state width="1493" height="208" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1612495370976" />
+    <state width="1493" height="301" key="GridCell.Tab.2.bottom" timestamp="1612492189256">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="301" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612492189256" />
+    <state width="1493" height="301" key="GridCell.Tab.2.center" timestamp="1612492189256">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="301" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1612492189256" />
+    <state width="1493" height="301" key="GridCell.Tab.2.left" timestamp="1612492189256">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="301" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1612492189256" />
+    <state width="1493" height="301" key="GridCell.Tab.2.right" timestamp="1612492189256">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="301" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1612492189256" />
     <state width="248" height="477" key="HiddenNamespacesPopup" timestamp="1612408763497">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="248" height="477" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1612408763497" />
+    <state x="537" y="128" key="RollbackChangesDialog" timestamp="1612494256848">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="537" y="128" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1612494256848" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1612425759212">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -230,6 +288,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="630" y="139" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.834@0.0.1536.834" timestamp="1612421370602" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1612491395370">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1612491395370" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1612423232161">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

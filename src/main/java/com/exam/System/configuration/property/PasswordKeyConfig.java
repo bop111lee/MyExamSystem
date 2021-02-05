@@ -2,6 +2,7 @@ package com.exam.System.configuration.property;
 
 import lombok.Data;
 
+@Data
 public class PasswordKeyConfig {
 
     private String publicKey;

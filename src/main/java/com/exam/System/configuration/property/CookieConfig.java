@@ -1,5 +1,8 @@
 package com.exam.System.configuration.property;
 
+import lombok.Data;
+
+@Data
 public class CookieConfig {
 
     public static String getName() {
