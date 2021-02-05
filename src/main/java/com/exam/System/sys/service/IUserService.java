@@ -1,11 +1,14 @@
 package com.exam.System.sys.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.exam.System.sys.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.exam.System.viewmodel.admin.user.UserPageRequestVM;
+import com.exam.System.viewmodel.admin.user.UserResponseVM;
 
 /**
  * <p>
- *  服务类
+ *  用户管理服务类
  * </p>
  *
  * @author li
@@ -13,4 +16,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
+    /**
+     * 分页查询用户
+     * @param requestVM
+     * @return
+     */
+    Page<User> userPage(UserPageRequestVM requestVM);
 }

@@ -2,33 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e66138d-b4d3-4bb5-ac07-b705ee1e6de7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/common/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/common/SystemCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/common/RestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/EducationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/ExamPaperController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserPageRequestVM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserResponseVM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/ExamPaperAnswerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/ExamPaperController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/ExamPaperQuestionCustomerAnswerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/MessageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/MessageUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/QuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/SubjectController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/TaskExamController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/TaskExamCustomerAnswerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/TextContentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/UserEventLogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/UserTokenController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/SystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/SystemApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/application/ApplicationContextProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/application/ApplicationContextProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/CookieConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/CookieConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/PasswordKeyConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/PasswordKeyConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/QnConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/QnConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/WxConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/configuration/property/WxConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +51,21 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="my_exam_system: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="my_exam_system@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="my_exam_system: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,7 +86,6 @@
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="foldersAlwaysOnTop" value="false" />
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
@@ -106,7 +101,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -116,11 +111,12 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaWorkPlace\MyExamSystem\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaWorkPlace\MyExamSystem\src\main\resources\mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaWorkPlace\MyExamSystem\src\main\java\com\exam\System\sys\controller\admin" />
+      <recent name="D:\IdeaWorkPlace\MyExamSystem\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SystemApplication">
@@ -190,7 +186,7 @@
       <updated>1612406277936</updated>
       <workItem from="1612406280463" duration="14877000" />
       <workItem from="1612430753023" duration="1131000" />
-      <workItem from="1612491057032" duration="9958000" />
+      <workItem from="1612491057032" duration="13928000" />
     </task>
     <task id="LOCAL-00001" summary="修复了无法启动的bug，并且关闭了security的拦截功能，后期完成业务逻辑后重新添加">
       <created>1612495707619</created>
@@ -199,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612495707619</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="开启slf4j日志的配置，开始修改controller">
+      <created>1612509740049</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612509740049</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="修复了无法启动的bug，并且关闭了security的拦截功能，后期完成业务逻辑后重新添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复了无法启动的bug，并且关闭了security的拦截功能，后期完成业务逻辑后重新添加" />
+    <MESSAGE value="开启slf4j日志的配置，开始修改controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="开启slf4j日志的配置，开始修改controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Project_Structure" timestamp="1612420794720">
@@ -227,10 +231,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="344" y="342" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1612495356900" />
-    <state x="338" y="9" key="CommitChangelistDialog2" timestamp="1612509682327">
+    <state x="338" y="9" key="CommitChangelistDialog2" timestamp="1612509739360">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="338" y="9" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1612509682327" />
+    <state x="338" y="9" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1612509739360" />
     <state x="113" y="65" key="DiffContextDialog" timestamp="1612509679255">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -299,10 +303,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1612506456069" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1612495715549">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1612509745413">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1612495715549" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1612509745413" />
     <state x="638" y="299" width="340" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612408814433">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -323,9 +327,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1612491395370" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1612423232161">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1612518850010">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1612423232161" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1612518850010" />
   </component>
 </project>
