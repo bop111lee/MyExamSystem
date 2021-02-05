@@ -18,11 +18,11 @@ spring:
     password: 990524
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-
 #日志相关配置
-#logging:
-#  config:
-#    classpath: logback-spring.xml
-#  level.com.dc.pcasweb.mapper: debug
-#  file: system_log
-#  level:
+logging:
+  level:
+    root: INFO
+    com.exam.System: DEBUG
+  file:
+    path: /log
+    max-size: 1000MB
