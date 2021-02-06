@@ -18,8 +18,8 @@ public interface IUserService extends IService<User> {
 
     /**
      * 分页查询用户
-     * @param requestVM
+     * @param model
      * @return
      */
-    Page<User> userPage(UserPageRequestVM requestVM);
+    Page<UserResponseVM> userPage(UserPageRequestVM model);
 }

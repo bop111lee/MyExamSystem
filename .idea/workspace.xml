@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e66138d-b4d3-4bb5-ac07-b705ee1e6de7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/common/RestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/EducationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/ExamPaperController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserPageRequestVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserResponseVM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MyExamSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xzs-sql/xzs-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xzs-sql/xzs-postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3476759d-ebca-4859-9cc1-43969ae186f2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3476759d-ebca-4859-9cc1-43969ae186f2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserPageRequestVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserPageRequestVM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,9 +96,10 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyExamOrigin" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -187,6 +185,9 @@
       <workItem from="1612406280463" duration="14877000" />
       <workItem from="1612430753023" duration="1131000" />
       <workItem from="1612491057032" duration="13928000" />
+      <workItem from="1612583659296" duration="665000" />
+      <workItem from="1612584931715" duration="997000" />
+      <workItem from="1612619708149" duration="1828000" />
     </task>
     <task id="LOCAL-00001" summary="修复了无法启动的bug，并且关闭了security的拦截功能，后期完成业务逻辑后重新添加">
       <created>1612495707619</created>
@@ -239,10 +240,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="113" y="65" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1612509679255" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1612408829534">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="732" y="231" key="FileChooserDialogImpl" timestamp="1612584939096">
+      <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1612408829534" />
+    <state x="732" y="231" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1612584939096" />
     <state width="1493" height="445" key="GridCell.Tab.0.bottom" timestamp="1612507549894">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -323,10 +325,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="630" y="139" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.834@0.0.1536.834" timestamp="1612421370602" />
-    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1612491395370">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="599" y="324" key="com.intellij.ide.util.TipDialog" timestamp="1612584931392">
+      <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1612491395370" />
+    <state x="599" y="324" key="com.intellij.ide.util.TipDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1612584931392" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1612518850010">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -3,6 +3,7 @@ package com.exam.System.sys.mapper;
 import com.exam.System.sys.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.context.annotation.Bean;
 
 /**
  * <p>
