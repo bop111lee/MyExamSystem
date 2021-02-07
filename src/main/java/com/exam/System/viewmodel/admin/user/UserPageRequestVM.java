@@ -3,7 +3,11 @@ package com.exam.System.viewmodel.admin.user;
 import com.exam.System.viewmodel.BasePage;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NonNull;
+
 
 @Data
 @ApiModel(value = "查询分页用户列表入参")
