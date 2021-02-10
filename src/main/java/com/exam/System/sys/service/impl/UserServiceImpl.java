@@ -39,9 +39,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         if (model.getUserName() != null) {
             queryWrapper.eq("user_name", model.getUserName());
         }
-
+        queryWrapper.orderByDesc("id");
         Page<User> userPage = userMapper.selectPage(new Page<>(model.getPageIndex(), model.getPageSize()), queryWrapper);
         Page<UserResponseVM> page = new Page<>();
+        //TODO：数据复制具有不确定性
         BeanUtils.copyProperties(userPage,page);
         return page;
     }
