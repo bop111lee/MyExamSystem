@@ -30,6 +30,7 @@ public class excelApplication extends JFrame {
                 information = new Information();
                 information = message(tx_message.getText(), (String) cb_name.getSelectedItem());
                 tx_look.setText(information.toString());
+                System.out.println("提取完成");
             }
         };
         Action action_tx_shopAdd = new AbstractAction() {
@@ -282,14 +283,14 @@ public class excelApplication extends JFrame {
             System.out.println(information.toString());
             //录入区级
             int region_index = addr[1].indexOf("区");
-            if (region_index != 0) {
-                String region = addr[1].substring(city_index + 1, region_index + 1);
+            if (region_index != -1) {
+                String region = addr[1].substring(city_index + 1, region_index+1);
                 information.setRegion(region);
                 String addrDetail = addr[1].substring(region_index + 1);
                 information.setDetailAddr(addrDetail);
             }
-            System.out.println(information.toString());
         }
+        System.out.println(information.toString());
         return information;
     }
 }
