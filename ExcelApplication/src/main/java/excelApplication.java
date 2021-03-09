@@ -1,12 +1,11 @@
-import javax.swing.table.*;
-
+import com.alibaba.excel.EasyExcel;
 import model.Commodity;
 import model.Information;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.ArrayList;
 /*
  * Created by JFormDesigner on Thu Mar 04 11:32:25 CST 2021
  */
@@ -19,11 +18,56 @@ public class excelApplication extends JFrame {
     private Information information;
     private Commodity commodity;
     private String commodityList;
+    private java.util.List<Information> informationList;
+
     public excelApplication() {
+        //初始化组件
         initComponents();
+        informationList = new ArrayList<Information>();
+        //设置按钮点击事件
+        Action action_tx_add = new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                information = new Information();
+                information = message(tx_message.getText(), (String) cb_name.getSelectedItem());
+                tx_look.setText(information.toString());
+            }
+        };
+        Action action_tx_shopAdd = new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                commodity = new Commodity();
+                if (tx_shop.getText().equals("") || tx_number.getText().equals("")) {
+                    return;
+                } else {
+                    commodity.setName(tx_shop.getText());
+                    commodity.setNumber(tx_number.getText());
+                    if (commodityList == null) {
+                        commodityList = commodity.getName() + "###" + commodity.getNumber() + "@@@";
+                    } else {
+                        commodityList = commodityList + commodity.getName() + "###" + commodity.getNumber() + "@@@";
+                    }
+                    information.setCommodities(commodityList);
+                }
+                tx_look.setText(information.toString());
+            }
+        };
+        Action action1_excel = new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                String fileName = "D:/01.xlsx";
+                EasyExcel.write(fileName,Information.class).sheet("模板").doWrite(informationList);
+            }
+        };
+        Action action_tx_in = new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                informationList.add(information);
+                information = new Information();
+                commodityList = new String();
+                commodity = new Commodity();
+            }
+        };
         button_message.addActionListener(action_tx_add);
         button_add.addActionListener(action_tx_shopAdd);
         button_in.addActionListener(action_tx_in);
+        button1.addActionListener(action1_excel);
     }
 
     private void initComponents() {
@@ -31,8 +75,6 @@ public class excelApplication extends JFrame {
         panel1 = new JPanel();
         label1 = new JLabel();
         cb_name = new JComboBox();
-        scrollPane2 = new JScrollPane();
-        table = new JTable();
         panel2 = new JPanel();
         button_message = new JButton();
         scrollPane1 = new JScrollPane();
@@ -47,34 +89,8 @@ public class excelApplication extends JFrame {
         button_add = new JButton();
         tx_look = new JTextField();
         button_in = new JButton();
-        action_tx_add = new AbstractAction() {
-            public void actionPerformed(ActionEvent e) {
-                information = new Information();
-                information = message(tx_message.getText(), (String) cb_name.getSelectedItem());
-                tx_look.setText(information.toString());
-            }
-        };
-        action_tx_shopAdd = new AbstractAction() {
-            public void actionPerformed(ActionEvent e) {
-                commodity = new Commodity();
-                if(tx_shop.getText().equals("") || tx_number.getText().equals("")){
-                    return;
-                }else {
-                    commodity.setName(tx_shop.getText());
-                    commodity.setNumber(tx_number.getText());
-                    commodityList = commodityList + commodity.getName() + "###" + commodity.getNumber() + "@@@";
-                    information.setCommodities(commodityList);
-                }
-                tx_look.setText(information.toString());
-            }
-        };
-        action_tx_in = new AbstractAction() {
-            public void actionPerformed(ActionEvent e) {
-                information = new Information();
-                commodityList = new String();
-                commodity = new Commodity();
-            }
-        };
+        button1 = new JButton();
+        button2 = new JButton();
 
         //======== this ========
         Container contentPane = getContentPane();
@@ -97,30 +113,6 @@ public class excelApplication extends JFrame {
         }
         contentPane.add(panel1);
         panel1.setBounds(new Rectangle(new Point(20, 10), panel1.getPreferredSize()));
-
-        //======== scrollPane2 ========
-        {
-
-            //---- table ----
-            table.setModel(new DefaultTableModel(
-                new Object[][] {
-                },
-                new String[] {
-                    "\u6536\u4ef6\u4eba\u59d3\u540d", "\u7701\u4efd", "\u57ce\u5e02", "\u5730\u533a", "\u5730\u5740", "\u624b\u673a", "\u5546\u54c1\u548c\u6570\u91cf"
-                }
-            ) {
-                Class<?>[] columnTypes = new Class<?>[] {
-                    String.class, String.class, String.class, String.class, String.class, String.class, String.class
-                };
-                @Override
-                public Class<?> getColumnClass(int columnIndex) {
-                    return columnTypes[columnIndex];
-                }
-            });
-            scrollPane2.setViewportView(table);
-        }
-        contentPane.add(scrollPane2);
-        scrollPane2.setBounds(10, 275, 670, 380);
 
         //======== panel2 ========
         {
@@ -194,6 +186,16 @@ public class excelApplication extends JFrame {
         contentPane.add(button_in);
         button_in.setBounds(new Rectangle(new Point(310, 235), button_in.getPreferredSize()));
 
+        //---- button1 ----
+        button1.setText("\u5bfc\u51faexcel");
+        contentPane.add(button1);
+        button1.setBounds(new Rectangle(new Point(495, 235), button1.getPreferredSize()));
+
+        //---- button2 ----
+        button2.setText("\u8f6c\u51fa");
+        contentPane.add(button2);
+        button2.setBounds(new Rectangle(new Point(590, 235), button2.getPreferredSize()));
+
         {
             // compute preferred size
             Dimension preferredSize = new Dimension();
@@ -217,8 +219,6 @@ public class excelApplication extends JFrame {
     private JPanel panel1;
     private JLabel label1;
     private JComboBox cb_name;
-    private JScrollPane scrollPane2;
-    private JTable table;
     private JPanel panel2;
     private JButton button_message;
     private JScrollPane scrollPane1;
@@ -233,14 +233,13 @@ public class excelApplication extends JFrame {
     private JButton button_add;
     private JTextField tx_look;
     private JButton button_in;
-    private AbstractAction action_tx_add;
-    private AbstractAction action_tx_shopAdd;
-    private AbstractAction action_tx_in;
+    private JButton button1;
+    private JButton button2;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 
-    public Information message(String message,String shop_name){
+    public Information message(String message, String shop_name) {
         Information information = new Information();
-        if(shop_name.equals("拼多多")){
+        if (shop_name.equals("拼多多")) {
             String[] message_split = message.split(" ");
             //录入姓名和电话
             information.setName(message_split[0]);
@@ -254,8 +253,7 @@ public class excelApplication extends JFrame {
             //录入地址
             information.setDetailAddr(message_split[5]);
             System.out.println(information.toString());
-        }
-        else {
+        } else {
             String replace = message.replace(" ", "");
             String[] message_split = replace.split(",");
             //录入姓名
@@ -268,11 +266,11 @@ public class excelApplication extends JFrame {
             String[] addr = message_split[2].split(":");
             String provice_maybe = addr[1].substring(0, 3);
             int begin_num = 0;
-            if(provice_maybe.equals("黑龙江") || provice_maybe.equals("内蒙古")){
+            if (provice_maybe.equals("黑龙江") || provice_maybe.equals("内蒙古")) {
                 provice_maybe = provice_maybe + "省";
                 information.setProvince(provice_maybe);
                 begin_num = 3;
-            }else {
+            } else {
                 String provice = addr[1].substring(0, 2) + "省";
                 information.setProvince(provice);
                 begin_num = 2;
@@ -282,8 +280,15 @@ public class excelApplication extends JFrame {
             String city = addr[1].substring(begin_num, city_index + 1);
             information.setCity(city);
             System.out.println(information.toString());
-            //录入省级
-            //无
+            //录入区级
+            int region_index = addr[1].indexOf("区");
+            if (region_index != 0) {
+                String region = addr[1].substring(city_index + 1, region_index + 1);
+                information.setRegion(region);
+                String addrDetail = addr[1].substring(region_index + 1);
+                information.setDetailAddr(addrDetail);
+            }
+            System.out.println(information.toString());
         }
         return information;
     }

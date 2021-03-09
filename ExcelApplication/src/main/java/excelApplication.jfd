@@ -23,50 +23,6 @@ new FormModel {
 				"x": 20
 				"y": 10
 			} )
-			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
-				name: "scrollPane2"
-				add( new FormComponent( "javax.swing.JTable" ) {
-					name: "table"
-					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
-						add( "收件人姓名" )
-						add( "省份" )
-						add( "城市" )
-						add( "地区" )
-						add( "地址" )
-						add( "手机" )
-						add( "商品和数量" )
-					}, new java.util.Vector {
-						add( class java.lang.String )
-						add( class java.lang.String )
-						add( class java.lang.String )
-						add( class java.lang.String )
-						add( class java.lang.String )
-						add( class java.lang.String )
-						add( class java.lang.String )
-					}, new java.util.Vector {
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-					}, new java.util.Vector {
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-						add( null )
-					} )
-				} )
-			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 10
-				"y": 275
-				"width": 670
-				"height": 380
-			} )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
 				name: "panel2"
 				add( new FormComponent( "javax.swing.JButton" ) {
@@ -144,24 +100,23 @@ new FormModel {
 				"x": 310
 				"y": 235
 			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "导出excel"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 235
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "转出"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 590
+				"y": 235
+			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 695, 700 )
-		} )
-		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
-			name: "action_tx_add"
-		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 725, 60 )
-		} )
-		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
-			name: "action_tx_shopAdd"
-		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 725, 115 )
-		} )
-		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
-			name: "action_tx_in"
-		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 725, 165 )
+			"size": new java.awt.Dimension( 695, 310 )
 		} )
 	}
 }
