@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e66138d-b4d3-4bb5-ac07-b705ee1e6de7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/common/RestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/EducationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/ExamPaperController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserPageRequestVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/viewmodel/admin/user/UserResponseVM.java" afterDir="false" />
+    <list default="true" id="8e66138d-b4d3-4bb5-ac07-b705ee1e6de7" name="Default Changelist" comment="修改Untracked Files Prevent Merge&#10;  &#9;&#9;&#9;Move or commit them before merge&#10;  &#9;&#9;&#9;View Files...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/sys/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/spring/security/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/System/configuration/spring/security/SecurityConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/ExamPaperAnswerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/ExamPaperController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/ExamPaperQuestionCustomerAnswerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/MessageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/MessageUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/QuestionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/SubjectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/TaskExamController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/TaskExamCustomerAnswerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/TextContentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/UserEventLogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/controller/UserTokenController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/sys/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exam/System/sys/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exam/System/sys/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/exam/System/sys/controller/admin" />
+    <property name="last_opened_file_path" value="D:/xzs-mysql-master/xzs-mysql-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -187,6 +189,7 @@
       <workItem from="1612406280463" duration="14877000" />
       <workItem from="1612430753023" duration="1131000" />
       <workItem from="1612491057032" duration="13928000" />
+      <workItem from="1614765146398" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="修复了无法启动的bug，并且关闭了security的拦截功能，后期完成业务逻辑后重新添加">
       <created>1612495707619</created>
@@ -202,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612509740049</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改Untracked Files Prevent Merge&#10;  &#9;&#9;&#9;Move or commit them before merge&#10;  &#9;&#9;&#9;View Files...">
+      <created>1612662961822</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612662961823</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +222,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="修复了无法启动的bug，并且关闭了security的拦截功能，后期完成业务逻辑后重新添加" />
     <MESSAGE value="开启slf4j日志的配置，开始修改controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="开启slf4j日志的配置，开始修改controller" />
+    <MESSAGE value="修改Untracked Files Prevent Merge&#10;  &#9;&#9;&#9;Move or commit them before merge&#10;  &#9;&#9;&#9;View Files..." />
+    <option name="LAST_COMMIT_MESSAGE" value="修改Untracked Files Prevent Merge&#10;  &#9;&#9;&#9;Move or commit them before merge&#10;  &#9;&#9;&#9;View Files..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Project_Structure" timestamp="1612420794720">
@@ -231,50 +242,51 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="344" y="342" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1612495356900" />
-    <state x="338" y="9" key="CommitChangelistDialog2" timestamp="1612509739360">
+    <state x="338" y="0" key="CommitChangelistDialog2" timestamp="1612692779901">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="338" y="9" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1612509739360" />
-    <state x="113" y="65" key="DiffContextDialog" timestamp="1612509679255">
+    <state x="338" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1612692779901" />
+    <state x="113" y="65" key="DiffContextDialog" timestamp="1612692773160">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="113" y="65" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1612509679255" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1612408829534">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="113" y="65" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1612692773160" />
+    <state x="549" y="178" key="FileChooserDialogImpl" timestamp="1614765222541">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1612408829534" />
-    <state width="1493" height="445" key="GridCell.Tab.0.bottom" timestamp="1612507549894">
+    <state x="549" y="178" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1614765222541" />
+    <state width="1493" height="81" key="GridCell.Tab.0.bottom" timestamp="1612692792712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.0.center" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612692792712" />
+    <state width="1493" height="81" key="GridCell.Tab.0.center" timestamp="1612692792711">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.0.left" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1612692792711" />
+    <state width="1493" height="81" key="GridCell.Tab.0.left" timestamp="1612692792711">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.0.right" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1612692792711" />
+    <state width="1493" height="81" key="GridCell.Tab.0.right" timestamp="1612692792712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.1.bottom" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1612692792712" />
+    <state width="1493" height="81" key="GridCell.Tab.1.bottom" timestamp="1612692792712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.1.center" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612692792712" />
+    <state width="1493" height="81" key="GridCell.Tab.1.center" timestamp="1612692792712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.1.left" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1612692792712" />
+    <state width="1493" height="81" key="GridCell.Tab.1.left" timestamp="1612692792712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
-    <state width="1493" height="445" key="GridCell.Tab.1.right" timestamp="1612507549894">
+    <state width="1493" height="81" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1612692792712" />
+    <state width="1493" height="81" key="GridCell.Tab.1.right" timestamp="1612692792712">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="445" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1612507549894" />
+    <state width="1493" height="81" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1612692792712" />
     <state width="1493" height="301" key="GridCell.Tab.2.bottom" timestamp="1612492189256">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -295,18 +307,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="248" height="477" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1612408763497" />
-    <state x="537" y="128" key="RollbackChangesDialog" timestamp="1612494256848">
+    <state x="147" y="66" key="MergeDialog" timestamp="1612663013746">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="537" y="128" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1612494256848" />
+    <state x="147" y="66" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1612663013746" />
+    <state x="477" y="133" key="MultipleFileMergeDialog" timestamp="1612663013752">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="477" y="133" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1612663013752" />
+    <state x="537" y="128" key="RollbackChangesDialog" timestamp="1612692790997">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="537" y="128" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1612692790997" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1612506456069">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1612506456069" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1612509745413">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1612662967089">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1612509745413" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1612662967089" />
     <state x="638" y="299" width="340" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612408814433">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -323,10 +343,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="630" y="139" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.834@0.0.1536.834" timestamp="1612421370602" />
-    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1612491395370">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="449" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1615254794330">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1612491395370" />
+    <state x="449" y="250" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1615254794330" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1612518850010">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

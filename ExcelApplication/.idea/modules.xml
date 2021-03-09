@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/classmanager_JFormDesigner-master/class_manager.iml" filepath="$PROJECT_DIR$/classmanager_JFormDesigner-master/class_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/excelApplication.iml" filepath="$PROJECT_DIR$/excelApplication.iml" />
+    </modules>
+  </component>
+</project>

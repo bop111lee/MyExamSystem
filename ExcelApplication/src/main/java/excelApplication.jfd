@@ -1,0 +1,167 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "平台"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cb_name"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "京东"
+						addElement( "京东" )
+						addElement( "拼多多" )
+					}
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 10
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "收件人姓名" )
+						add( "省份" )
+						add( "城市" )
+						add( "地区" )
+						add( "地址" )
+						add( "手机" )
+						add( "商品和数量" )
+					}, new java.util.Vector {
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 275
+				"width": 670
+				"height": 380
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_message"
+					"text": "添加"
+					"minimumSize": new java.awt.Dimension( 100, 30 )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"enabled": false
+					"horizontalScrollBarPolicy": 31
+					"verticalScrollBarPolicy": 22
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "tx_message"
+						"rows": 20
+						"maximumSize": new java.awt.Dimension( 250, 2147483647 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 55
+				"width": 350
+				"height": 130
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+				name: "panel5"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "panel3"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "商品    "
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "tx_shop"
+						"preferredSize": new java.awt.Dimension( 100, 25 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "panel4"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "商品数量"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "tx_number"
+						"preferredSize": new java.awt.Dimension( 100, 25 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button_add"
+					"text": "添加"
+					"minimumSize": new java.awt.Dimension( 100, 30 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 380
+				"y": 55
+				"width": 195
+				"height": 130
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tx_look"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 195
+				"width": 655
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button_in"
+				"text": "录入"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 310
+				"y": 235
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 695, 700 )
+		} )
+		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
+			name: "action_tx_add"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 725, 60 )
+		} )
+		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
+			name: "action_tx_shopAdd"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 725, 115 )
+		} )
+		add( new FormNonVisual( "javax.swing.AbstractAction" ) {
+			name: "action_tx_in"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 725, 165 )
+		} )
+	}
+}
