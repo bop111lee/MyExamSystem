@@ -31,8 +31,6 @@ public class Information {
     @ExcelProperty(value = "手机",index = 9)
     private String phone;
 
-    @ExcelIgnore
-    private String message;
 
     @ExcelProperty(value = "商品和数量",index = 13)
     private String commodities;
@@ -45,7 +43,6 @@ public class Information {
                 region + "," +
                 detailAddr + "," +
                 phone + "," +
-                message + "," +
                 commodities;
     }
 }

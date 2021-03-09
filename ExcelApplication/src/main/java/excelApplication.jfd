@@ -86,37 +86,45 @@ new FormModel {
 				"width": 195
 				"height": 130
 			} )
-			add( new FormComponent( "javax.swing.JTextField" ) {
-				name: "tx_look"
-			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 20
-				"y": 195
-				"width": 655
-			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button_in"
 				"text": "录入"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 				"x": 310
-				"y": 235
+				"y": 300
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button1"
 				"text": "导出excel"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 				"x": 495
-				"y": 235
+				"y": 295
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button2"
 				"text": "转出"
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 590
-				"y": 235
+				"x": 600
+				"y": 295
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				"verticalScrollBarPolicy": 22
+				"horizontalScrollBarPolicy": 31
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "tx_look"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 8, false )
+					"maximumSize": new java.awt.Dimension( 540, 2147483647 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 195
+				"width": 540
+				"height": 95
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 695, 310 )
+			"location": new java.awt.Point( 60, 5 )
+			"size": new java.awt.Dimension( 695, 405 )
 		} )
 	}
 }

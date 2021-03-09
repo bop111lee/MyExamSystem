@@ -23,6 +23,8 @@ public class excelApplication extends JFrame {
     public excelApplication() {
         //初始化组件
         initComponents();
+        //设置滚动条
+
         informationList = new ArrayList<Information>();
         //设置按钮点击事件
         Action action_tx_add = new AbstractAction() {
@@ -53,13 +55,23 @@ public class excelApplication extends JFrame {
         };
         Action action1_excel = new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
-                String fileName = "D:/01.xlsx";
+                String fileName = "D:/example.xlsx";
                 EasyExcel.write(fileName,Information.class).sheet("模板").doWrite(informationList);
             }
         };
         Action action_tx_in = new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
-                informationList.add(information);
+                String text = tx_look.getText();
+                Information in = new Information();
+                String[] split = text.split(",");
+                in.setName(split[0]);
+                in.setProvince(split[1]);
+                in.setCity(split[2]);
+                in.setRegion(split[3]);
+                in.setDetailAddr(split[4]);
+                in.setPhone(split[5]);
+                in.setCommodities(split[6]);
+                informationList.add(in);
                 information = new Information();
                 commodityList = new String();
                 commodity = new Commodity();
@@ -88,10 +100,11 @@ public class excelApplication extends JFrame {
         label3 = new JLabel();
         tx_number = new JTextField();
         button_add = new JButton();
-        tx_look = new JTextField();
         button_in = new JButton();
         button1 = new JButton();
         button2 = new JButton();
+        scrollPane2 = new JScrollPane();
+        tx_look = new JTextPane();
 
         //======== this ========
         Container contentPane = getContentPane();
@@ -179,23 +192,34 @@ public class excelApplication extends JFrame {
         }
         contentPane.add(panel5);
         panel5.setBounds(380, 55, 195, 130);
-        contentPane.add(tx_look);
-        tx_look.setBounds(20, 195, 655, tx_look.getPreferredSize().height);
 
         //---- button_in ----
         button_in.setText("\u5f55\u5165");
         contentPane.add(button_in);
-        button_in.setBounds(new Rectangle(new Point(310, 235), button_in.getPreferredSize()));
+        button_in.setBounds(new Rectangle(new Point(310, 300), button_in.getPreferredSize()));
 
         //---- button1 ----
         button1.setText("\u5bfc\u51faexcel");
         contentPane.add(button1);
-        button1.setBounds(new Rectangle(new Point(495, 235), button1.getPreferredSize()));
+        button1.setBounds(new Rectangle(new Point(495, 295), button1.getPreferredSize()));
 
         //---- button2 ----
         button2.setText("\u8f6c\u51fa");
         contentPane.add(button2);
-        button2.setBounds(new Rectangle(new Point(590, 235), button2.getPreferredSize()));
+        button2.setBounds(new Rectangle(new Point(600, 295), button2.getPreferredSize()));
+
+        //======== scrollPane2 ========
+        {
+            scrollPane2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+            scrollPane2.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+            //---- tx_look ----
+            tx_look.setFont(tx_look.getFont().deriveFont(tx_look.getFont().getStyle() | Font.BOLD, tx_look.getFont().getSize() + 8f));
+            tx_look.setMaximumSize(new Dimension(540, 2147483647));
+            scrollPane2.setViewportView(tx_look);
+        }
+        contentPane.add(scrollPane2);
+        scrollPane2.setBounds(25, 195, 540, 95);
 
         {
             // compute preferred size
@@ -232,14 +256,17 @@ public class excelApplication extends JFrame {
     private JLabel label3;
     private JTextField tx_number;
     private JButton button_add;
-    private JTextField tx_look;
     private JButton button_in;
     private JButton button1;
     private JButton button2;
+    private JScrollPane scrollPane2;
+    private JTextPane tx_look;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 
     public Information message(String message, String shop_name) {
         Information information = new Information();
+        message = message.replaceAll("\\n", " ");
+        System.out.println(message);
         if (shop_name.equals("拼多多")) {
             String[] message_split = message.split(" ");
             //录入姓名和电话
